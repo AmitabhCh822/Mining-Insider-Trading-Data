@@ -9,7 +9,7 @@ stock = 'GS'
 
 # Request for data from Finhub.io (30 calls per second limit: https://finnhub.io/docs/api/rate-limit).
 r = requests.get('https://finnhub.io/api/v1/stock/insider-transactions?symbol='
-                 +stock+'&token=cbbfq02ad3ibhoa226mg')
+                 +stock+'&token= Your API key')
 
 # Load the JSON file as a string.
 test = json.loads(r.text)
@@ -32,4 +32,4 @@ df['buyOrSale'] = np.select(conditions, values)
 
 print(df)
 
-df.to_csv('C:/Users/Amitabh/Desktop\\'+stock+'.csv', index=False) 
+df.to_csv('Your Path\\'+stock+'.csv', index=False) 
