@@ -8,5 +8,5 @@ InsiderPortfolioChange: The change ratio of the insider’s overall share of the
 buyOrSale: Whether the transaction was a buy, sale, or gift
 
 
-I looked into the trading data of one of the most popular public companies, Goldman Sachs. Running the Python file "Mining Insider Trading Data.py" would web scrape the trading data of Goldman Sachs from Finnhub.io and save the data set in a csv file. The stock name can be changed from "GS" to the stock name of any public company in the Python file to mine the trading data of that company.
+I looked into the trading data of one of the most popular public companies, Goldman Sachs. Running the Python file "Mining Insider Trading Data.py" would web scrape the trading data of Goldman Sachs from Finnhub.io and save the data set in a csv file. The stock name of any public company can be assigned to the "stock" variable in the Python file to mine the trading data of that company.
 
