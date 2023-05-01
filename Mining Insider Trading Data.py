@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun March 9 18:22:27 2023
+Created on Thursday March 9 18:22:27 2023
 
 @author: Amitabh Chakravorty
 """
@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 
 #Accessing the trading database
-finnhub_client = finnhub.Client(api_key="cbbfq02ad3ibhoa226mg") #The user’s unique API key has to be entered
+finnhub_client = finnhub.Client(api_key="USER'S KEY") #The user’s unique API key has to be entered
 
 #The stock symbol of Tesla is TSLA
 stock = 'TSLA'
@@ -50,4 +50,4 @@ df.drop(df[(df['Transaction Type'] == 'Gift')].index, inplace=True)
 print(df)
 
 #Saving the data in a CSV file
-df.to_csv('C:/Users/Amitabh/Desktop\\'+stock+'.csv', index=False) 
+df.to_csv("User's Folder Path"+stock+".csv", index=False)
