@@ -1,12 +1,6 @@
 # Mining-Insider-Trading-Data
-The dataset in GS.csv consists of mined data from Finnhub.io, which is a real-time RESTful API offering its users access to many different forms of stock trading data. I used their insider transactions API request. I converted the string data into a data frame, which is more functional. I derived the additional attributes, viz.,
+In this project, the insider trading data of a company with a the highest number of insider trasactions during the period of April 2020 to March 2023 was mined from a financial website called Finnhub.io which is a real-time RESTful API offering its users access to many different forms of stock trading data. After examining the insider transactions of different popular public comapnies like Google, Facebook, Twiter, Goldman Sachs, Tesla, Gamestock and so on from the Finnhub.io's database, it was determined that Tesla had the highest number of insider trasanctions and so the insider trading data of Tesla of the time period of April 2020 to March 2023 was mined.
 
-DollarAmount: Dollar amount of the transaction
+The insider transactions API (Application Programming Interface) request of Finnhub.io was used in this project. A single request allows mining the trading data of a time period of 12 consecutive months and so three requests were written to mine the trading data of the previous 36 consecutive months in the Python file, Mining Insider Trading Data.py. The string data was converted into a data frame, which is a dataset organized into a two dimensional table of rows and columns, to better perform the data manipulation. From the variables in the mined dataset, two more attributes were derived in this project which are Dollar Volume and Type. 
 
-InsiderPortfolioChange: The change ratio of the insider’s overall share of the company
-
-buyOrSale: Whether the transaction was a buy, sale, or gift
-
-
-I looked into the trading data of one of the most popular public companies, Goldman Sachs. Running the Python file "Mining Insider Trading Data.py" would web scrape the trading data of Goldman Sachs from Finnhub.io and save the data set in a csv file. The stock name of any public company can be assigned to the "stock" variable in the Python file to mine the trading data of that company.
-
+After running the Mining Insider Trading Data.py, the dataset in the CSV file TSLA.csv was obtained.
